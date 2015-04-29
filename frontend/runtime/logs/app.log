@@ -1,0 +1,622 @@
+2015-04-25 15:05:01 [127.0.0.1][-][-][error][yii\base\Exception] exception 'yii\base\ErrorException' with message 'mkdir(): File exists' in /var/www/latihanyii/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:462
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'mkdir(): File e...', '/var/www/latiha...', 462, Array)
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(462): mkdir('/var/www/latiha...', 509)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(256): yii\helpers\BaseFileHelper::createDirectory('/var/www/latiha...', 509, true)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(492): yii\helpers\BaseFileHelper::copyDirectory('/var/www/latiha...', '/var/www/latiha...', Array)
+#4 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(413): yii\web\AssetManager->publishDirectory('/var/www/latiha...', Array)
+#5 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetBundle.php(162): yii\web\AssetManager->publish('/var/www/latiha...', Array)
+#6 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#7 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(201): yii\web\AssetManager->loadBundle('yii\web\JqueryA...', Array, true)
+#8 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\web\JqueryA...')
+#9 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\web\JqueryA...', NULL)
+#10 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\web\YiiAsse...', NULL)
+#11 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetBundle.php(118): yii\web\View->registerAssetBundle('frontend\assets...')
+#12 /var/www/latihanyii/frontend/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#13 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/latiha...')
+#14 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/latiha...', Array)
+#15 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/latiha...', Array, Object(frontend\controllers\SiteController))
+#16 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#17 /var/www/latihanyii/frontend/controllers/SiteController.php(70): yii\base\Controller->render('index')
+#18 [internal function]: frontend\controllers\SiteController->actionIndex()
+#19 /var/www/latihanyii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#20 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#22 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#23 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\base\Exception' with message 'Failed to create directory '/var/www/latihanyii/frontend/web/assets/955c0dd7': mkdir(): File exists' in /var/www/latihanyii/vendor/yiisoft/yii2/helpers/BaseFileHelper.php:465
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/helpers/BaseFileHelper.php(256): yii\helpers\BaseFileHelper::createDirectory('/var/www/latiha...', 509, true)
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(492): yii\helpers\BaseFileHelper::copyDirectory('/var/www/latiha...', '/var/www/latiha...', Array)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(413): yii\web\AssetManager->publishDirectory('/var/www/latiha...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetBundle.php(162): yii\web\AssetManager->publish('/var/www/latiha...', Array)
+#4 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(230): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#5 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetManager.php(201): yii\web\AssetManager->loadBundle('yii\web\JqueryA...', Array, true)
+#6 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\web\JqueryA...')
+#7 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\web\JqueryA...', NULL)
+#8 /var/www/latihanyii/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\web\YiiAsse...', NULL)
+#9 /var/www/latihanyii/vendor/yiisoft/yii2/web/AssetBundle.php(118): yii\web\View->registerAssetBundle('frontend\assets...')
+#10 /var/www/latihanyii/frontend/views/layouts/main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#11 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/latiha...')
+#12 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/latiha...', Array)
+#13 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/latiha...', Array, Object(frontend\controllers\SiteController))
+#14 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#15 /var/www/latihanyii/frontend/controllers/SiteController.php(70): yii\base\Controller->render('index')
+#16 [internal function]: frontend\controllers\SiteController->actionIndex()
+#17 /var/www/latihanyii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#20 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#21 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+2015-04-25 15:05:01 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '3tvpg9g8ncccboe9u0vnrd7763'
+    '_csrf' => 'f8eed59d65ef1025e55d30045c73c5942f49aa717f8e141428c86811e4546f9da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OmZ3q05aaEZmj2iWOEEcO_pPGTM6HTW6\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=3tvpg9g8ncccboe9u0vnrd7763; _csrf=f8eed59d65ef1025e55d30045c73c5942f49aa717f8e141428c86811e4546f9da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OmZ3q05aaEZmj2iWOEEcO_pPGTM6HTW6%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '34291'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/latihanyii/frontend/web/'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429974301.164
+    'REQUEST_TIME' => 1429974301
+]
+2015-04-26 06:05:53 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "armada".' in /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('armada', Array)
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-26 06:05:53 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'armada'
+]
+
+$_COOKIE = [
+    '_csrf' => '775b42591be3bcfcede97b6022872b10a893c3f99bb895d6b1d34ac82c76bf20a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UrUJjj-FCu2XZlf84RElCoovEV6DKSbX\";}'
+    'PHPSESSID' => '16ho1ma7em5mjgi43igg54cph4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=775b42591be3bcfcede97b6022872b10a893c3f99bb895d6b1d34ac82c76bf20a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UrUJjj-FCu2XZlf84RElCoovEV6DKSbX%22%3B%7D; PHPSESSID=16ho1ma7em5mjgi43igg54cph4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '56107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=armada'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=armada'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430028353.605
+    'REQUEST_TIME' => 1430028353
+]
+2015-04-26 07:14:32 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/latihanyii/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-26 07:14:32 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'TlUzRmVTTEs0YGo0EREcPzk9VCdIYiEkPzJfIzo5eAYmJXUMDBsoEQ=='
+    'Generator' => [
+        'tableName' => 'user'
+        'modelClass' => 'User'
+        'ns' => 'backend\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => '1'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'backend\\models'
+        'queryClass' => 'UserQuery'
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '16ho1ma7em5mjgi43igg54cph4'
+    '_csrf' => '6b81c6c4846712803941a48b89a3c0242adf53f206b14047be711744e51201b2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sKVeEST3g-fm55ZQrGJRMRmNP3MzvYr5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '642'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=16ho1ma7em5mjgi43igg54cph4; _csrf=6b81c6c4846712803941a48b89a3c0242adf53f206b14047be711744e51201b2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sKVeEST3g-fm55ZQrGJRMRmNP3MzvYr5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '56610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430032472.58
+    'REQUEST_TIME' => 1430032472
+]
+2015-04-27 05:55:11 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/latihanyii/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-27 05:55:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'XzJscXhXc3kvBxwcNzYlSmtBGVwtAAEbFgoBFgkGJgoPbVkdCRIaIQ=='
+    'Generator' => [
+        'tableName' => 'user_booking'
+        'modelClass' => 'UserBooking'
+        'ns' => 'backend\\models\\UserBooking'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => '1'
+        'generateLabelsFromComments' => '0'
+        'generateQuery' => '0'
+        'queryNs' => 'backend\\models\\UserBooking'
+        'queryClass' => 'UserBookingQuery'
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '139061621c05cf784f97aea1bcce879fb1d3be908937fb1b1beceb8bb3b83eeea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rLHrdxVFi3NV68Td77sG936qEsAH7ZU-\";}'
+    'PHPSESSID' => '16ho1ma7em5mjgi43igg54cph4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '692'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=139061621c05cf784f97aea1bcce879fb1d3be908937fb1b1beceb8bb3b83eeea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rLHrdxVFi3NV68Td77sG936qEsAH7ZU-%22%3B%7D; PHPSESSID=16ho1ma7em5mjgi43igg54cph4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '54131'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430114110.601
+    'REQUEST_TIME' => 1430114110
+]
+2015-04-27 06:03:37 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/latihanyii/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-27 06:03:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'S0tESGhDRVopHQUhKQYNNBwYdjkRGREOBDMrDhp1Hzwhez5/Ai4wOA=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\UserBooking'
+        'searchModelClass' => 'backend\\models\\UserBookingSearch'
+        'controllerClass' => 'backend\\controllers\\UserBookingController'
+        'viewPath' => 'backend\\views\\user-booking'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '16ho1ma7em5mjgi43igg54cph4'
+    '_csrf' => '69198f2bde745900f027803def4d20e92108795c7aba3d9d423bc6e95931977aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"msyHnuSMwu5ytTz060qDzdHskqPQsuyQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '524'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=16ho1ma7em5mjgi43igg54cph4; _csrf=69198f2bde745900f027803def4d20e92108795c7aba3d9d423bc6e95931977aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22msyHnuSMwu5ytTz060qDzdHskqPQsuyQ%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '54197'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430114617.327
+    'REQUEST_TIME' => 1430114617
+]
+2015-04-28 08:21:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /var/www/latihanyii/frontend/views/site/order.php:14
+Stack trace:
+#0 /var/www/latihanyii/frontend/views/site/order.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/latiha...', 14, Array)
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/latiha...')
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/latiha...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/latiha...', Array, Object(frontend\controllers\SiteController))
+#4 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('order', Array, Object(frontend\controllers\SiteController))
+#5 /var/www/latihanyii/frontend/controllers/SiteController.php(122): yii\base\Controller->render('order')
+#6 [internal function]: frontend\controllers\SiteController->actionOrder()
+#7 /var/www/latihanyii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('order', Array)
+#10 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/order', Array)
+#11 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2015-04-28 08:21:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/order'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts\";}'
+    'PHPSESSID' => '52lu8rie4pe7qp7sa8r3h5jtt3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts%22%3B%7D; PHPSESSID=52lu8rie4pe7qp7sa8r3h5jtt3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '59788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Forder'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=site%2Forder'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430209261.537
+    'REQUEST_TIME' => 1430209261
+]
+2015-04-28 08:29:56 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}', expecting ']'' in /var/www/latihanyii/frontend/controllers/SiteController.php:140
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-28 08:29:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/order'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts\";}'
+    'PHPSESSID' => '52lu8rie4pe7qp7sa8r3h5jtt3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts%22%3B%7D; PHPSESSID=52lu8rie4pe7qp7sa8r3h5jtt3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '59815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Forder'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=site%2Forder'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430209796.346
+    'REQUEST_TIME' => 1430209796
+]
+2015-04-28 08:30:13 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\UserBooking' not found' in /var/www/latihanyii/frontend/controllers/SiteController.php:122
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-28 08:30:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/order'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts\";}'
+    'PHPSESSID' => '52lu8rie4pe7qp7sa8r3h5jtt3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf=f26fd2672479ad8f996a3d599cfa7b9c3b406aef38032d8ae00e28183b4e8ed8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mnK9TDC5cv2AHNxRU5qhAiitCY2gY_Ts%22%3B%7D; PHPSESSID=52lu8rie4pe7qp7sa8r3h5jtt3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '59816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Forder'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=site%2Forder'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430209813.355
+    'REQUEST_TIME' => 1430209813
+]
+2015-04-29 03:56:38 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /var/www/latihanyii/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/latihanyii/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/latihanyii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#2 /var/www/latihanyii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#3 /var/www/latihanyii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/latihanyii/frontend/web/index.php(18): yii\base\Application->run()
+#5 {main}
+2015-04-29 03:56:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'form'
+]
+
+$_POST = [
+    '_csrf' => 'T2JvLWRrY0QiDCQUMC8gcSwUXWwsJRsWGlceRSUCCjAMO11KPTQ3Nw=='
+    'Generator' => [
+        'viewName' => 'order'
+        'modelClass' => 'backend\\models\\UserBooking'
+        'scenarioName' => ''
+        'viewPath' => '@app/views'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '24a5dd733eb387b96dbc1f7faded3c8e' => '1'
+    ]
+    'generate' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'sk7ap1c831c23alsmckhgv55u2'
+    '_csrf' => 'b85038b11ea59fdcd98e3fc91377fb111a57725fdad85a2eb35bbe29a07b1638a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VyO8SY3diG4IbYHG2FZ9T0a7weUVmGZT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '374'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=form'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ms;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=sk7ap1c831c23alsmckhgv55u2; _csrf=b85038b11ea59fdcd98e3fc91377fb111a57725fdad85a2eb35bbe29a07b1638a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VyO8SY3diG4IbYHG2FZ9T0a7weUVmGZT%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/latihanyii/frontend/web/index.php'
+    'REMOTE_PORT' => '38820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=form'
+    'REQUEST_URI' => '/latihanyii/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=form'
+    'SCRIPT_NAME' => '/latihanyii/frontend/web/index.php'
+    'PHP_SELF' => '/latihanyii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1430279798.21
+    'REQUEST_TIME' => 1430279798
+]
